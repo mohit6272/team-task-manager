@@ -180,24 +180,24 @@ git remote add origin https://github.com/your-username/team-task-manager.git
 git push -u origin main
 ```
 
-### Step 2 — Deploy Backend on Railway
-1. Go to [railway.app](https://railway.app) and sign in
+### Step 2 — Deploy Backend on Render
+1. Go to [render.app](https://render.app) and sign in
 2. Click **New Project → Deploy from GitHub repo**
 3. Select your repo
 4. Click **Add Service → Add Variables**:
    ```
    MONGODB_URI = mongodb+srv://...
    JWT_SECRET = your_secret_here
-   FRONTEND_URL = https://your-frontend.railway.app
+   FRONTEND_URL = https://your-frontend.render.app
    ```
 5. Railway auto-detects Node.js and runs `npm start`
 
-### Step 3 — Deploy Frontend on Railway
+### Step 3 — Deploy Frontend on Render
 1. In the same project, click **New Service → GitHub Repo**
 2. Set root directory to `/frontend`
 3. Add variable:
    ```
-   VITE_API_URL = https://your-backend.up.railway.app/api
+   VITE_API_URL = https://your-backend.up.render.app/api
    ```
 4. Set build command: `npm run build`
 5. Set start command: `npx serve dist -p $PORT`
@@ -205,7 +205,7 @@ git push -u origin main
 > **Note:** Install `serve` in frontend: `npm install serve`
 
 ### Step 4 — Update CORS
-In backend `.env` on Railway, set:
+In backend `.env` on Render, set:
 ```
 FRONTEND_URL=https://your-frontend.up.railway.app
 ```
