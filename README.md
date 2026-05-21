@@ -169,7 +169,7 @@ Open: http://localhost:5173
 
 ---
 
-## 🚂 Deploy on Railway
+## 🚂 Deploy on Render
 
 ### Step 1 — Push to GitHub
 ```bash
