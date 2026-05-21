@@ -10,7 +10,7 @@ A full-stack web app for managing team projects and tasks with role-based access
 | Backend | Node.js + Express.js |
 | Database | MongoDB (Atlas) |
 | Auth | JWT (JSON Web Tokens) |
-| Deployment | Railway |
+| Deployment | Render |
 
 ---
 
